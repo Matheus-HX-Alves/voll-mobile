@@ -6,6 +6,7 @@ import Principal from "./Principal";
 import Consultas from "./Consultas";
 import Perfil from "./Perfil";
 const Tab = createBottomTabNavigator();
+
 const screenOptions = {
   tabBarStyle: {
     backgroundColor: "#002851"
@@ -13,6 +14,7 @@ const screenOptions = {
   tabBarActiveTintColor: "#339CCF",
   tabBarInactiveTintColor: "#FFF"
 }
+
 const tabs = [
   {
     name:'Principal',
@@ -40,8 +42,8 @@ export default function Tabs() {
   return (
     <Tab.Navigator  screenOptions={screenOptions}>
       {tabs.map((tab) => (  
-        <Tab.Screen key={tab.name} name={tab.name} component={tab.component} options={{ headerShown: false, tabBarIcon: ({ color, size }) => (<Ionicons color={color} size={size} name={tab.icon} />) }} />
+        <Tab.Screen key={tab.name} name={tab.name} component={tab.component} options={{ headerShown: false, tabBarIcon: ({ color, size, }) => (<Ionicons name={tab.icon} color={color} size={size}/>) }} />
       ))}
-      </Tab.Navigator>
+    </Tab.Navigator>
   )
 }

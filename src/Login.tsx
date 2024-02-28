@@ -10,6 +10,7 @@ import { Botao } from './components/Botao';
 
 //Por que com Native base a image nao funciona
 const LogoImage = require('./assets/Logo.png')
+
 //import { Logo } from './assets/Logo.png'
 
 export default function Login({navigation}) {
@@ -24,7 +25,7 @@ export default function Login({navigation}) {
   return (
     <VStack flex={1} alignItems="Center" justifyContent="center" p={5}>
       <Image source={LogoImage} alt="Logo Voll" style={styles.Logo} />
-      <Titulo>
+      <Titulo mt="50px">
         Faça login em sua conta
       </Titulo>
       <Box mt="10px">

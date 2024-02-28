@@ -2,7 +2,7 @@ import { FormControl, Input, IInputProps } from 'native-base'
 import { ReactNode } from 'react'
 
 interface EntradaTextoProps extends IInputProps{
-  label:ReactNode,
+  label?:ReactNode,
   placeholder?:string
   secureTextEntry?: boolean;
   leftIcon?: React.ReactNode;

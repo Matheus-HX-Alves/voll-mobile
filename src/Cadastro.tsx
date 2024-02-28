@@ -24,7 +24,7 @@ export default function Cadastro({navigation}) {
   return (
     <ScrollView flex={1} p={5} >
       <Image source={LogoImage} alt="Logo Voll" style={styles.Logo} />
-      <Titulo>{Secoes[numSecao].Titulo}</Titulo>
+      <Titulo mt={10}>{Secoes[numSecao].Titulo}</Titulo>
       <Box mt="10px">
         {
           Secoes[numSecao]?.EntradaTexto?.map(entrada => {

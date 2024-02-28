@@ -11,7 +11,6 @@ export function Botao({ children, autoSize, color,...rest }:BotaoProps ) {
   return(
   <Button w={autoSize ? 'auto' : '100%'}
   bg={color || 'blue.800'}
-  size="lg"
   height="50px"
   mt={5}
   borderRadius="lg"
